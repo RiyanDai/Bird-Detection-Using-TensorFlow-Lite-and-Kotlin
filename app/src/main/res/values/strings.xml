@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Birdie</string>
+    <string name="gallery">gallery\n</string>
+    <string name="analyze">analyze\n</string>
+    <string name="image_classifier_failed">Failed to analyze</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="failed">TIDAK TERDETEKSI</string>
+    <string name="insert_image">Masukkan Gambar</string>
+    <string name="ucrop_null">kosong\n</string>
+    <string name="save_button">Save Result\n</string>
+    <string name="confidence_score">Hasil</string>
+    <string name="analysis_score">Score: %s</string>
+    <string name="hasil_analisis">Results</string>
+    <string name="analysis_type">Spesies: %s</string>
+    <string name="moreInfo">Click the above text for more information</string>
+    <string name="btn_save">Save Result</string>
+    <string name="Btn_delete">delete</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_scan">Scan</string>
+    <string name="title_history">History</string>
+    <string name="title_profile">Profile</string>
+
+    <string-array name="data_name">
+        <item>Small Blue Kingfisher</item>
+        <item>Blue Jay</item>
+        <item>Robin Magpie</item>
+        <item>Tree Sparrow </item>
+        <item>Pine Grosbeak</item>
+        <item>Jay Eurasia</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>The common kingfisher (Alcedo atthis), also known as the Eurasian kingfisher and river kingfisher, is a small kingfisher with seven subspecies recognized within its wide distribution across Eurasia and North Africa. It is resident in much of its range, but migrates from areas where rivers freeze in winter. This sparrow-sized bird has the typical short-tailed, large-headed kingfisher profile; it has blue upperparts, orange underparts and a long bill. It feeds mainly on fish, caught by diving, and has special visual adaptations to enable it to see prey under water. The glossy white eggs are laid in a nest at the end of a burrow in a riverbank.</item>
+        <item>The blue jay (Cyanocitta cristata) is a passerine bird in the family Corvidae, native to eastern North America. It lives in most of the eastern and central United States; some eastern populations may be migratory. Resident populations are also in Newfoundland, Canada; breeding populations are found across southern Canada. It breeds in both deciduous and coniferous forests, and is common in residential areas. Its coloration is predominantly blue, with a white chest and underparts, and a blue crest; it has a black, U-shaped collar around its neck and a black border behind the crest.</item>
+        <item>The oriental magpie-robin (Copsychus saularis) is a small passerine bird that was formerly classed as a member of the thrush family Turdidae, but now considered an Old World flycatcher. They are distinctive black and white birds with a long tail that is held upright as they forage on the ground or perch conspicuously. Occurring across most of the Indian subcontinent and parts of Southeast Asia, they are common birds in urban gardens as well as forests. They are particularly well known for their songs and were once popular as cagebirds.</item>
+        <item>The house sparrow (Passer domesticus) is a bird of the sparrow family Passeridae, found in most parts of the world. It is a small bird that has a typical length of 16 cm (6.3 in) and a mass of 24–39.5 g (0.85–1.39 oz). Females and young birds are coloured pale brown and grey, and males have brighter black, white, and brown markings. One of about 25 species in the genus Passer, the house sparrow is native to most of Europe, the Mediterranean Basin, and a large part of Asia. Its intentional or accidental introductions to many regions, including parts of Australasia, Africa, and the Americas, make it the most widely distributed wild bird.</item>
+        <item>The pine grosbeak (Pinicola enucleator) is a large member of the true finch family, Fringillidae. It is the only species in the genus Pinicola. It is found in coniferous woods across Alaska, the western mountains of the United States, Canada, and in subarctic Fennoscandia and across the Palearctic to Siberia. The species is a frugivore, especially in winter, favoring small fruits, such as rowans (mountain-ashes in the New World). With fruit-crop abundance varying from year to year, pine grosbeak is one of many subarctic-resident bird species that exhibit irruptive behavior. In irruption years, individuals can move long distances in search of suitable food supplies, bringing them farther south and/or downslope than is typical of years with large fruit crops.</item>
+        <item>The Eurasian jay (Garrulus glandarius) is a species of passerine bird in the crow family Corvidae. It has pinkish brown plumage with a black stripe on each side of a whitish throat, a bright blue panel on the upper wing and a black tail. The Eurasian jay is a woodland bird that occurs over a vast region from western Europe and north-west Africa to the Indian subcontinent and further to the eastern seaboard of Asia and down into south-east Asia. Across this vast range, several distinct racial forms have evolved which look different from each other, especially when comparing forms at the extremes of its range.</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/kingfisher</item>
+        <item>@drawable/cynanota</item>
+        <item>@drawable/robin</item>
+        <item>@drawable/gereja</item>
+        <item>@drawable/pinicola</item>
+        <item>@drawable/jay_eurasia</item>
+
+    </integer-array>
+
+    <string name="heroes_name">Nama Burung</string>
+    <string name="description">Deskripsi</string>
+    <string name="HomeTitle">Discover the World of Birds</string>
+    <string name="DescHome">How to use the app</string>
+    <string name="BirdName">Bird Name</string>
+    <string name="profile">Profile</string>
+
+    <string name="bio">As an informatics student and mobile development enthusiast, I have a passion for creating beautiful and functional apps for users. I write code primarily in Kotlin, which is a popular programming language for Android development. My focus is on creating visually appealing and intuitive user experiences that make using the app a pleasure.</string>
+    <string name="user_information"><Author></Author> Information</string>
+    <string name="username_">Name</string>
+    <string name="riyanthecoder">Riyan Daifullah</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="age">Age</string>
+    <string name="_21">20</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="_07_02_2003">24/12/2003</string>
+</resources>
