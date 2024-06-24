@@ -11,5 +11,9 @@
         <item name="cornerSize">6dp</item>
     </style>
 
+    <!-- Tema untuk Splash Screen -->
+    <style name="AppTheme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
 
 </resources>

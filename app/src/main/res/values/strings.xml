@@ -5,11 +5,7 @@
     <string name="image_classifier_failed">Failed to analyze</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="failed">TIDAK TERDETEKSI</string>
-    <string name="insert_image">Masukkan Gambar</string>
-    <string name="ucrop_null">kosong\n</string>
     <string name="save_button">Save Result\n</string>
-    <string name="confidence_score">Hasil</string>
     <string name="analysis_score">Score: %s</string>
     <string name="hasil_analisis">Results</string>
     <string name="analysis_type">Spesies: %s</string>
@@ -67,4 +63,18 @@
     <string name="_21">20</string>
     <string name="date_of_birth">Date of birth</string>
     <string name="_07_02_2003">24/12/2003</string>
+    <string name="HomeLe">Discover</string>
+    <string name="explore">Explore a World of Birds</string>
+    <string name="curios">Curious about a bird?</string>
+    <string name="efforels">Uncover its identity effortlessly</string>
+    <string name="btnScan">Scan Now</string>
+    <string name="tips">Birdwatching Tips</string>
+    <string name="attracting">How to Use</string>
+    <string name="highPrediction">Highest Prediction Scores</string>
+    <string name="identify">Identify</string>
+    <string name="snap">Snap and Identify</string>
+    <string name="load">Load Image</string>
+    <string name="take">Take Image</string>
+    <string name="descScan">Identify bird species effortlessly by either capturing a photo with your camera or selecting an existing image from your gallery</string>
+    <string name="Tentang">About</string>
 </resources>

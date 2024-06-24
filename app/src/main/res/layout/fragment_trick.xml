@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.tipsAndTrick.TrickFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="How to Use the App"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/back_button" />
+
+        <ImageView
+            android:id="@+id/app_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/log2"
+            app:layout_constraintDimensionRatio="H,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_text" />
+
+        <TextView
+            android:id="@+id/tips_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tips"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/app_image" />
+
+        <LinearLayout
+            android:id="@+id/tips_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tips_header"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:id="@+id/tip1_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Open the App"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tip1_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Launch the bird detection app from your home screen or app drawer."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tip2_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="2. Upload an Image"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tip2_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select the upload option to choose a bird image from your gallery."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tip3_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="3. Use the Camera"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tip3_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap the camera icon to take a photo of a bird directly within the app."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tip4_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="4. Analyze the Image"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tip4_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wait for the app to analyze the image and identify the bird species."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tip5_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="5. Review Results"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tip5_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View the bird species name and additional information provided by the app."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tip6_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="6. Save the Identification"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tip6_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save the identified bird to your personal birding journal within the app."
+                android:textSize="16sp" />
+
+
+
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

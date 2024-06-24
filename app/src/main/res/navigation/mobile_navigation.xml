@@ -9,7 +9,17 @@
         android:id="@+id/navigation_home"
         android:name="com.dicoding.picodiploma.mybottomnavigation.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_scan"
+            app:destination="@id/navigation_scan" />
+        <action
+            android:id="@+id/action_navigation_home_to_tipsFragment"
+            app:destination="@id/tipsFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_trickFragment"
+            app:destination="@id/trickFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_scan"
@@ -27,6 +37,16 @@
         android:name="com.dicoding.birdie.view.fragment.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/tipsFragment"
+        android:name="com.dicoding.birdie.view.fragment.tipsAndTrick.TipsFragment"
+        android:label="fragment_tips"
+        tools:layout="@layout/fragment_tips" />
+    <fragment
+        android:id="@+id/trickFragment"
+        android:name="com.dicoding.birdie.view.fragment.tipsAndTrick.TrickFragment"
+        android:label="fragment_trick"
+        tools:layout="@layout/fragment_trick" />
 
 
 </navigation>

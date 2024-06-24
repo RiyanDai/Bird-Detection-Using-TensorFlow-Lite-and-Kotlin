@@ -1,14 +1,12 @@
 package com.dicoding.picodiploma.mybottomnavigation.ui.home
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-
-import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.dicoding.birdie.R
 import com.dicoding.birdie.adapter.BurungAdapter
@@ -22,7 +20,6 @@ class  HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
-    private lateinit var homeViewModel: HomeViewModel
     private val list = ArrayList<burunge>()
 
     override fun onCreateView(
@@ -30,7 +27,6 @@ class  HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        homeViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -39,7 +35,22 @@ class  HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         list.addAll(getListBirds())
         showRecyclerGrid()
+        ClickListener()
     }
+
+    private fun ClickListener() {
+        binding.buttonScan.setOnClickListener {
+            findNavController().navigate(R.id.action_navigation_home_to_navigation_scan)
+        }
+        binding.tips.setOnClickListener {
+            findNavController().navigate(R.id.action_navigation_home_to_tipsFragment)
+        }
+        binding.Attracting.setOnClickListener {
+            findNavController().navigate(R.id.action_navigation_home_to_trickFragment)
+        }
+    }
+
+
 
     private fun getListBirds(): ArrayList<burunge> {
         val dataName = resources.getStringArray(R.array.data_name)
