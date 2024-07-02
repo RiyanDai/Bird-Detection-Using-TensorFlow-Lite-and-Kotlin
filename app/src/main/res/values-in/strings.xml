@@ -1,13 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- res/values-in/strings.xml -->
 <resources>
     <string name="app_name">Birdie</string>
-    <string name="gallery">galeri\n</string>
-    <string name="analyze">analisis\n</string>
+    <string name="gallery">galeri</string>
+    <string name="analyze">analisis</string>
     <string name="image_classifier_failed">Gagal menganalisis</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Halo fragmen kosong</string>
-    <string name="save_button">Simpan Hasil\n</string>
+    <string name="hello_blank_fragment">Halo fragment kosong</string>
+    <string name="save_button">Simpan Hasil</string>
     <string name="analysis_score">Skor: %s</string>
     <string name="hasil_analisis">Hasil</string>
     <string name="analysis_type">Spesies: %s</string>
@@ -21,48 +18,48 @@
     <string name="title_profile">Profil</string>
 
     <string-array name="data_name">
-        <item>Raja Udang Biru Kecil</item>
-        <item>Jay Biru</item>
-        <item>Magpie Robin</item>
-        <item>Gereja Pohon</item>
-        <item>Pipit Pinus</item>
-        <item>Jay Eurasia</item>
+        <item>Chloropsis sonnerati</item>
+        <item>Columba livia</item>
+        <item>Robin Magpie</item>
+        <item>Leucopsar rothschildi</item>
+        <item>Lonchura oryzivora</item>
+        <item>Corvus corax</item>
     </string-array>
 
     <string-array name="data_description">
-        <item>Raja udang biasa (Alcedo atthis), juga dikenal sebagai raja udang Eurasia dan raja sungai, adalah raja udang kecil dengan tujuh subspesies yang dikenali dalam distribusinya yang luas di seluruh Eurasia dan Afrika Utara. Ia tinggal di sebagian besar jangkauannya, tetapi bermigrasi dari daerah-daerah di mana sungai membeku di musim dingin. Burung seukuran burung gereja ini memiliki profil raja udang berekor pendek, berkepala besar; ia memiliki bagian atas berwarna biru, bagian bawah berwarna oranye dan paruh panjang. Ia terutama memakan ikan, yang ditangkap dengan menyelam, dan memiliki adaptasi visual khusus untuk memungkinkan ia melihat mangsa di bawah air. Telur putih mengkilap diletakkan di sarang di ujung lubang di tepi sungai.</item>
-        <item>Jay biru (Cyanocitta cristata) adalah burung passerine dalam keluarga Corvidae, asli Amerika Utara bagian timur. Ia hidup di sebagian besar Amerika Serikat bagian timur dan tengah; beberapa populasi timur mungkin bermigrasi. Populasi residen juga ada di Newfoundland, Kanada; populasi pemuliaan ditemukan di seluruh Kanada bagian selatan. Ia berkembang biak di hutan gugur dan konifer, dan umum di daerah perumahan. Warnanya didominasi biru, dengan dada dan bagian bawah berwarna putih, dan jambul biru; ia memiliki kerah berbentuk U hitam di lehernya dan garis hitam di belakang jambul.</item>
-        <item>Magpie-robin oriental (Copsychus saularis) adalah burung passerine kecil yang sebelumnya diklasifikasikan sebagai anggota keluarga burung thrush Turdidae, tetapi sekarang dianggap sebagai burung terbang Dunia Lama. Mereka adalah burung hitam dan putih yang khas dengan ekor panjang yang dipegang tegak saat mencari makan di tanah atau bertengger mencolok. Tersebar di sebagian besar subbenua India dan bagian Asia Tenggara, mereka adalah burung umum di taman kota maupun hutan. Mereka terkenal karena nyanyiannya dan pernah populer sebagai burung kandang.</item>
-        <item>Burung gereja rumah (Passer domesticus) adalah burung keluarga gereja Passeridae, ditemukan di sebagian besar bagian dunia. Ini adalah burung kecil yang memiliki panjang khas 16 cm (6,3 inci) dan massa 24–39,5 g (0,85–1,39 oz). Betina dan burung muda berwarna coklat pucat dan abu-abu, dan jantan memiliki tanda-tanda hitam, putih, dan coklat yang lebih cerah. Salah satu dari sekitar 25 spesies dalam genus Passer, burung gereja rumah asli sebagian besar Eropa, Cekungan Mediterania, dan sebagian besar Asia. Pengantar sengaja atau tidak sengaja ke banyak daerah, termasuk bagian Australasia, Afrika, dan Amerika, menjadikannya burung liar yang paling tersebar luas.</item>
-        <item>Pipit pinus (Pinicola enucleator) adalah anggota besar dari keluarga finch sejati, Fringillidae. Ini adalah satu-satunya spesies dalam genus Pinicola. Ia ditemukan di hutan konifer di seluruh Alaska, pegunungan barat Amerika Serikat, Kanada, dan di subarktik Fennoscandia dan di seluruh Palearctic ke Siberia. Spesies ini adalah frugivora, terutama di musim dingin, menyukai buah kecil, seperti rowan (abu gunung di Dunia Baru). Dengan kelimpahan hasil buah yang bervariasi dari tahun ke tahun, pipit pinus adalah salah satu dari banyak spesies burung penduduk subarktik yang menunjukkan perilaku irruptif. Pada tahun-tahun irupsi, individu dapat bergerak jauh mencari persediaan makanan yang cocok, membawa mereka lebih jauh ke selatan dan/atau ke bawah daripada yang biasa terjadi pada tahun-tahun dengan hasil buah yang besar.</item>
-        <item>Jay Eurasia (Garrulus glandarius) adalah spesies burung passerine dalam keluarga burung gagak Corvidae. Ia memiliki bulu coklat kemerahan dengan garis hitam di setiap sisi tenggorokan yang keputihan, panel biru cerah di sayap atas dan ekor hitam. Jay Eurasia adalah burung hutan yang tersebar di wilayah yang luas dari Eropa barat dan Afrika barat laut hingga subbenua India dan lebih jauh ke pantai timur Asia dan ke Asia Tenggara. Di seluruh jangkauan yang luas ini, beberapa bentuk rasial yang berbeda telah berkembang yang terlihat berbeda satu sama lain, terutama saat membandingkan bentuk di ujung jangkauannya.</item>
+        <item>Cica-daun Besar atau Cucak Hijau, dikenal dengan warna hijau terang dan suara merdu.</item>
+        <item>Merpati karang, burung yang sering ditemukan di area urban dan suka berkelompok.</item>
+        <item>Magpie Robin, burung hitam dan putih dengan ekor panjang yang sering dijumpai di Asia.</item>
+        <item>Jalak Bali, burung endemik Bali dengan bulu putih dan pelupuk mata biru.</item>
+        <item>Gelatik Jawa, burung kecil populer sebagai peliharaan dengan bulu indah.</item>
+        <item>Gagak, burung besar dan cerdas dengan bulu hitam, sering dijumpai di seluruh dunia.</item>
     </string-array>
 
     <integer-array name="data_photo">
-        <item>@drawable/kingfisher</item>
-        <item>@drawable/cynanota</item>
+        <item>@drawable/cucaijo</item>
+        <item>@drawable/dara</item>
         <item>@drawable/robin</item>
-        <item>@drawable/gereja</item>
-        <item>@drawable/pinicola</item>
-        <item>@drawable/jay_eurasia</item>
+        <item>@drawable/jalak</item>
+        <item>@drawable/gelatik</item>
+        <item>@drawable/gagak</item>
     </integer-array>
 
     <string name="heroes_name">Nama Burung</string>
     <string name="description">Deskripsi</string>
-    <string name="HomeTitle">Temukan Dunia Burung</string>
+    <string name="HomeTitle">Jelajahi Dunia Burung</string>
     <string name="DescHome">Cara menggunakan aplikasi</string>
     <string name="BirdName">Nama Burung</string>
     <string name="profile">Profil</string>
 
-    <string name="bio">Sebagai mahasiswa informatika dan penggemar pengembangan aplikasi mobile, saya memiliki hasrat untuk menciptakan aplikasi yang indah dan fungsional bagi pengguna. Saya menulis kode terutama dalam Kotlin, yang merupakan bahasa pemrograman populer untuk pengembangan Android. Fokus saya adalah menciptakan pengalaman pengguna yang menarik dan intuitif yang membuat penggunaan aplikasi menjadi menyenangkan.</string>
-    <string name="user_information"><Author></Author> Informasi</string>
+    <string name="bio">Sebagai mahasiswa informatika dan penggemar pengembangan aplikasi seluler, saya memiliki hasrat untuk membuat aplikasi yang indah dan fungsional untuk pengguna. Saya menulis kode terutama dalam bahasa Kotlin, yang merupakan bahasa pemrograman populer untuk pengembangan Android. Fokus saya adalah menciptakan pengalaman pengguna yang menarik dan intuitif yang membuat penggunaan aplikasi menjadi menyenangkan.</string>
+    <string name="user_information">Informasi <Author></Author></string>
     <string name="username_">Nama</string>
     <string name="riyanthecoder">Riyan Daifullah</string>
     <string name="gender">Jenis Kelamin</string>
     <string name="male">Laki-laki</string>
-    <string name="age">Umur</string>
+    <string name="age">Usia</string>
     <string name="_21">20</string>
-    <string name="date_of_birth">Tanggal lahir</string>
+    <string name="date_of_birth">Tanggal Lahir</string>
     <string name="_07_02_2003">24/12/2003</string>
     <string name="HomeLe">Temukan</string>
     <string name="explore">Jelajahi Dunia Burung</string>
@@ -76,6 +73,39 @@
     <string name="snap">Ambil dan Identifikasi</string>
     <string name="load">Muat Gambar</string>
     <string name="take">Ambil Gambar</string>
-    <string name="descScan">Identifikasi spesies burung dengan mudah dengan menangkap foto menggunakan kamera atau memilih gambar yang sudah ada dari galeri Anda</string>
+    <string name="descScan">Identifikasi spesies burung dengan mudah dengan mengambil foto atau memilih gambar dari galeri Anda</string>
     <string name="Tentang">Tentang</string>
+    <string name="headerTips">Tips Mengamati Burung</string>
+    <string name="txt1">1. Persiapkan Peralatan untuk Mengamati Burung</string>
+    <string name="txt2">Selalu bawa teropong untuk melihat lebih dekat.</string>
+    <string name="txt3">2. Mengenali Bahasa Burung</string>
+    <string name="txt4">Pelajari untuk mengidentifikasi perilaku dan suara burung yang umum.</string>
+    <string name="txt5">3. Gunakan Panduan Lapangan</string>
+    <string name="txt6">Bawa panduan lapangan untuk membantu mengidentifikasi burung.</string>
+    <string name="txt7">4. Pelajari Suara Burung</string>
+    <string name="txt8">Kenali suara-suara burung yang umum.</string>
+    <string name="txt9">5. Bersabarlah</string>
+    <string name="txt10">Mengamati burung memerlukan kesabaran dan pengamatan yang tenang.</string>
+    <string name="txt11">6. Berpakaian Sesuai</string>
+    <string name="txt12">Kenakan pakaian yang sesuai dengan lingkungan dan cuaca.</string>
+    <string name="txt13">7. Gunakan Teknologi</string>
+    <string name="txt14">Manfaatkan aplikasi dan sumber daya online untuk bantuan.</string>
+    <string name="txt15">8. Amati Pola Terbang</string>
+    <string name="txt16">Perhatikan cara burung terbang dan bergerak.</string>
+    <string name="txt17">9. Catat Pengamatan</string>
+    <string name="txt18">Dokumentasikan pengamatan dan penemuan Anda.</string>
+    <string name="txt19">10. Bergabung dengan Grup Pengamat Burung</string>
+    <string name="txt20">Terhubung dengan pengamat burung lokal untuk tips dan kegiatan bersama.</string>
+    <string name="headerUser">Cara Menggunakan Aplikasi</string>
+    <string name="tx1">1. Buka Aplikasi</string>
+    <string name="tx2">Luncurkan aplikasi pendeteksi burung dari layar utama atau laci aplikasi Anda.</string>
+    <string name="tx3">2. Unggah Gambar</string>
+    <string name="tx4">Pilih opsi unggah untuk memilih gambar burung dari galeri Anda.</string>
+    <string name="tx5">3. Gunakan Kamera</string>
+    <string name="tx6">Ketuk ikon kamera untuk mengambil foto burung langsung di dalam aplikasi.</string>
+    <string name="tx7">Tunggu aplikasi menganalisis gambar dan mengidentifikasi spesies burung.</string>
+    <string name="tx8">5. Tinjau Hasil</string>
+    <string name="tx9">Lihat nama spesies burung dan informasi tambahan yang diberikan oleh aplikasi.</string>
+    <string name="tx10">6. Simpan Identifikasi</string>
+    <string name="tx11">Simpan burung yang teridentifikasi ke dalam jurnal pengamatan pribadi Anda di dalam aplikasi.</string>
 </resources>

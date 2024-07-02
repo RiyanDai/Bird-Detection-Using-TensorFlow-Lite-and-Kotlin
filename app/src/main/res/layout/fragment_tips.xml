@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Bird Watching Tips"
+            android:text="@string/headerTips"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -75,7 +75,7 @@
                 android:id="@+id/tip1_header"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1. Gear Up for Birding"
+                android:text="@string/txt1"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -83,7 +83,7 @@
                 android:id="@+id/tip1_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Always bring binoculars for a closer look."
+                android:text="@string/txt2"
                 android:textSize="16sp" />
 
             <TextView
@@ -91,7 +91,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="2. Decode Bird Language"
+                android:text="@string/txt3"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -99,7 +99,7 @@
                 android:id="@+id/tip2_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Learn to identify common bird behaviors and sounds."
+                android:text="@string/txt4"
                 android:textSize="16sp" />
 
             <TextView
@@ -107,7 +107,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="3. Use a Field Guide"
+                android:text="@string/txt5"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -115,7 +115,7 @@
                 android:id="@+id/tip3_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Carry a field guide to help identify birds."
+                android:text="@string/txt6"
                 android:textSize="16sp" />
 
             <TextView
@@ -123,7 +123,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="4. Learn Bird Calls"
+                android:text="@string/txt7"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -131,7 +131,7 @@
                 android:id="@+id/tip4_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Familiarize yourself with common bird calls."
+                android:text="@string/txt8"
                 android:textSize="16sp" />
 
             <TextView
@@ -139,7 +139,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="5. Be Patient"
+                android:text="@string/txt9"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -147,7 +147,7 @@
                 android:id="@+id/tip5_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bird watching requires patience and quiet observation."
+                android:text="@string/txt10"
                 android:textSize="16sp" />
 
             <TextView
@@ -155,7 +155,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="6. Dress Appropriately"
+                android:text="@string/txt11"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -163,7 +163,7 @@
                 android:id="@+id/tip6_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Wear suitable clothing for the environment and weather."
+                android:text="@string/txt12"
                 android:textSize="16sp" />
 
             <TextView
@@ -171,7 +171,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="7. Use Technology"
+                android:text="@string/txt13"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -179,7 +179,7 @@
                 android:id="@+id/tip7_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Utilize birding apps and online resources for assistance."
+                android:text="@string/txt14"
                 android:textSize="16sp" />
 
             <TextView
@@ -187,7 +187,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="8. Observe Flight Patterns"
+                android:text="@string/txt15"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -195,7 +195,7 @@
                 android:id="@+id/tip8_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pay attention to how birds fly and move."
+                android:text="@string/txt16"
                 android:textSize="16sp" />
 
             <TextView
@@ -203,7 +203,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="9. Keep Notes"
+                android:text="@string/txt17"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -211,7 +211,7 @@
                 android:id="@+id/tip9_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Document your observations and sightings."
+                android:text="@string/txt18"
                 android:textSize="16sp" />
 
             <TextView
@@ -219,7 +219,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="10. Join a Birding Group"
+                android:text="@string/txt19"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -227,7 +227,7 @@
                 android:id="@+id/tip10_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Connect with local bird watchers for tips and outings."
+                android:text="@string/txt20"
                 android:textSize="16sp" />
             <!-- Add more tips following the same pattern -->
 

@@ -26,9 +26,14 @@ import androidx.core.net.toUri
 import com.dicoding.birdie.R
 import com.dicoding.birdie.databinding.FragmentScanBinding
 import com.dicoding.birdie.ml.BirdsModel
+import com.dicoding.birdie.ml.ModelUnquant
+import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.image.TensorImage
+import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.io.File
 import java.io.IOException
+import java.nio.ByteBuffer
+import java.nio.ByteOrder
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -54,7 +59,7 @@ class ScanFragment : Fragment(R.layout.fragment_scan) {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding =FragmentScanBinding.inflate(inflater, container, false)
+        _binding = FragmentScanBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -70,7 +75,6 @@ class ScanFragment : Fragment(R.layout.fragment_scan) {
         loadImageButton = binding.btnLoadImage
     }
 
-
     private fun setupListeners() {
         captureImageButton.setOnClickListener {
             handleCaptureImage()
@@ -78,11 +82,6 @@ class ScanFragment : Fragment(R.layout.fragment_scan) {
 
         loadImageButton.setOnClickListener {
             handleLoadImage()
-        }
-
-        imageView.setOnLongClickListener {
-            requestPermissionLauncher.launch(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
-            true
         }
     }
 
@@ -143,25 +142,73 @@ class ScanFragment : Fragment(R.layout.fragment_scan) {
         }
     }
 
-    private fun generateOutput(bitmap: Bitmap) {
-        val birdsModel = BirdsModel.newInstance(requireContext())
-        val newBitmap = bitmap.copy(Bitmap.Config.ARGB_8888, true)
-        val tfImage = TensorImage.fromBitmap(newBitmap)
+    private val labels = arrayOf(
+        "Leucopsar rothschildi",
+        "Pityriasis gymnocephala",
+        "Lonchura oryzivora",
+        "Clamator coromandus",
+        "Columba livia",
+        "Chloropsis sonnerati",
+        "Copsychus saularis",
+        "Corvus Corax",
+        "Unknown"
+    )
 
-        val outputs = birdsModel.process(tfImage).probabilityAsCategoryList.apply {
-            sortByDescending { it.score }
+    private val CONFIDENCE_THRESHOLD = 0.5f // Adjust this threshold as needed
+
+    private fun generateOutput(bitmap: Bitmap) {
+        val resizedBitmap = Bitmap.createScaledBitmap(bitmap, 224, 224, true)
+
+        val byteBuffer = ByteBuffer.allocateDirect(1 * 224 * 224 * 3 * 4)  // 1 image, 224x224, 3 channels, 4 bytes per float
+        byteBuffer.order(ByteOrder.nativeOrder())
+
+        val intValues = IntArray(224 * 224)
+        resizedBitmap.getPixels(intValues, 0, 224, 0, 0, 224, 224)
+        var pixel = 0
+        for (i in 0 until 224) {
+            for (j in 0 until 224) {
+                val value = intValues[pixel++]
+                byteBuffer.putFloat((value shr 16 and 0xFF) / 255.0f)
+                byteBuffer.putFloat((value shr 8 and 0xFF) / 255.0f)
+                byteBuffer.putFloat((value and 0xFF) / 255.0f)
+            }
         }
 
-        val highProbabilityOutput = outputs[0]
+        val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 224, 224, 3), DataType.FLOAT32)
+        inputFeature0.loadBuffer(byteBuffer)
+
+        val model = ModelUnquant.newInstance(requireContext())
+        val outputs = model.process(inputFeature0)
+        val outputFeature0 = outputs.outputFeature0AsTensorBuffer
+
+        val (maxIndex, maxConfidence) = getMaxIndexWithConfidence(outputFeature0.floatArray)
+        val label = if (maxConfidence >= CONFIDENCE_THRESHOLD) {
+            labels[maxIndex]
+        } else {
+            "Unknown"
+        }
+
+        model.close()
+
         val imageUri = saveImageToCache(bitmap)
-
         val intent = Intent(requireContext(), ResultActivity::class.java).apply {
-            putExtra("label", highProbabilityOutput.label)
-            putExtra("confidence", highProbabilityOutput.score)
+            putExtra("label", label)
+            putExtra("confidence", maxConfidence)
             putExtra("imageUri", imageUri.toString())
-
         }
         startActivity(intent)
+    }
+
+    private fun getMaxIndexWithConfidence(arr: FloatArray): Pair<Int, Float> {
+        var maxIndex = 0
+        var max = arr[0]
+        for (i in arr.indices) {
+            if (arr[i] > max) {
+                max = arr[i]
+                maxIndex = i
+            }
+        }
+        return Pair(maxIndex, max)
     }
 
     private fun saveImageToCache(bitmap: Bitmap): Uri {
@@ -172,46 +219,6 @@ class ScanFragment : Fragment(R.layout.fragment_scan) {
             bitmap.compress(Bitmap.CompressFormat.PNG, 100, it)
         }
         return file.toUri()
-    }
-
-    private val requestPermissionLauncher = registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted ->
-        if (isGranted) {
-            promptImageDownload()
-        } else {
-            Toast.makeText(requireContext(), "Please allow permission to download image", Toast.LENGTH_LONG).show()
-        }
-    }
-
-    private fun promptImageDownload() {
-        androidx.appcompat.app.AlertDialog.Builder(requireContext()).setTitle("Download Image?")
-            .setMessage("Do you want to download this image to your device?")
-            .setPositiveButton("Yes") { _, _ ->
-                val bitmap = (imageView.drawable as BitmapDrawable).bitmap
-                downloadImage(bitmap)
-            }
-            .setNegativeButton("No") { dialog, _ ->
-                dialog.dismiss()
-            }
-            .show()
-    }
-
-    private fun downloadImage(bitmap: Bitmap): Uri? {
-        val contentValues = ContentValues().apply {
-            put(MediaStore.Images.Media.DISPLAY_NAME, "Birds_Images${System.currentTimeMillis() / 1000}")
-            put(MediaStore.Images.Media.MIME_TYPE, "image/png")
-        }
-        val uri = MediaStore.Images.Media.EXTERNAL_CONTENT_URI
-        return uri?.let {
-            requireContext().contentResolver.insert(it, contentValues)?.also { uri ->
-                requireContext().contentResolver.openOutputStream(uri)?.use { outputStream ->
-                    if (bitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream)) {
-                        Toast.makeText(requireContext(), "Image Saved", Toast.LENGTH_LONG).show()
-                    } else {
-                        throw IOException("Couldn't save the bitmap")
-                    }
-                }
-            }
-        }
     }
 
     override fun onDestroyView() {

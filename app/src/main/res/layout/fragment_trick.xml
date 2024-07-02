@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="How to Use the App"
+            android:text="@string/headerUser"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -72,7 +72,7 @@
                 android:id="@+id/tip1_header"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1. Open the App"
+                android:text="@string/tx1"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -80,7 +80,7 @@
                 android:id="@+id/tip1_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Launch the bird detection app from your home screen or app drawer."
+                android:text="@string/tx2"
                 android:textSize="16sp" />
 
             <TextView
@@ -88,7 +88,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="2. Upload an Image"
+                android:text="@string/tx3"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -96,7 +96,7 @@
                 android:id="@+id/tip2_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Select the upload option to choose a bird image from your gallery."
+                android:text="@string/tx4"
                 android:textSize="16sp" />
 
             <TextView
@@ -104,7 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="3. Use the Camera"
+                android:text="@string/tx5"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -112,7 +112,7 @@
                 android:id="@+id/tip3_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tap the camera icon to take a photo of a bird directly within the app."
+                android:text="@string/tx6"
                 android:textSize="16sp" />
 
             <TextView
@@ -128,7 +128,7 @@
                 android:id="@+id/tip4_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Wait for the app to analyze the image and identify the bird species."
+                android:text="@string/tx7"
                 android:textSize="16sp" />
 
             <TextView
@@ -136,7 +136,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="5. Review Results"
+                android:text="@string/tx8"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -144,7 +144,7 @@
                 android:id="@+id/tip5_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="View the bird species name and additional information provided by the app."
+                android:text="@string/tx9"
                 android:textSize="16sp" />
 
             <TextView
@@ -152,7 +152,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="6. Save the Identification"
+                android:text="@string/tx10"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -160,7 +160,7 @@
                 android:id="@+id/tip6_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Save the identified bird to your personal birding journal within the app."
+                android:text="@string/tx11"
                 android:textSize="16sp" />
 
 

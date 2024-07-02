@@ -19,30 +19,31 @@
     <string name="title_profile">Profile</string>
 
     <string-array name="data_name">
-        <item>Small Blue Kingfisher</item>
-        <item>Blue Jay</item>
+        <item>Chloropsis sonnerati</item>
+        <item>Columba livia</item>
         <item>Robin Magpie</item>
-        <item>Tree Sparrow </item>
-        <item>Pine Grosbeak</item>
-        <item>Jay Eurasia</item>
+        <item>Leucopsar rothschildi</item>
+        <item>Lonchura oryzivora</item>
+        <item>Corvus corax</item>
     </string-array>
 
+
     <string-array name="data_description">
-        <item>The common kingfisher (Alcedo atthis), also known as the Eurasian kingfisher and river kingfisher, is a small kingfisher with seven subspecies recognized within its wide distribution across Eurasia and North Africa. It is resident in much of its range, but migrates from areas where rivers freeze in winter. This sparrow-sized bird has the typical short-tailed, large-headed kingfisher profile; it has blue upperparts, orange underparts and a long bill. It feeds mainly on fish, caught by diving, and has special visual adaptations to enable it to see prey under water. The glossy white eggs are laid in a nest at the end of a burrow in a riverbank.</item>
-        <item>The blue jay (Cyanocitta cristata) is a passerine bird in the family Corvidae, native to eastern North America. It lives in most of the eastern and central United States; some eastern populations may be migratory. Resident populations are also in Newfoundland, Canada; breeding populations are found across southern Canada. It breeds in both deciduous and coniferous forests, and is common in residential areas. Its coloration is predominantly blue, with a white chest and underparts, and a blue crest; it has a black, U-shaped collar around its neck and a black border behind the crest.</item>
-        <item>The oriental magpie-robin (Copsychus saularis) is a small passerine bird that was formerly classed as a member of the thrush family Turdidae, but now considered an Old World flycatcher. They are distinctive black and white birds with a long tail that is held upright as they forage on the ground or perch conspicuously. Occurring across most of the Indian subcontinent and parts of Southeast Asia, they are common birds in urban gardens as well as forests. They are particularly well known for their songs and were once popular as cagebirds.</item>
-        <item>The house sparrow (Passer domesticus) is a bird of the sparrow family Passeridae, found in most parts of the world. It is a small bird that has a typical length of 16 cm (6.3 in) and a mass of 24–39.5 g (0.85–1.39 oz). Females and young birds are coloured pale brown and grey, and males have brighter black, white, and brown markings. One of about 25 species in the genus Passer, the house sparrow is native to most of Europe, the Mediterranean Basin, and a large part of Asia. Its intentional or accidental introductions to many regions, including parts of Australasia, Africa, and the Americas, make it the most widely distributed wild bird.</item>
-        <item>The pine grosbeak (Pinicola enucleator) is a large member of the true finch family, Fringillidae. It is the only species in the genus Pinicola. It is found in coniferous woods across Alaska, the western mountains of the United States, Canada, and in subarctic Fennoscandia and across the Palearctic to Siberia. The species is a frugivore, especially in winter, favoring small fruits, such as rowans (mountain-ashes in the New World). With fruit-crop abundance varying from year to year, pine grosbeak is one of many subarctic-resident bird species that exhibit irruptive behavior. In irruption years, individuals can move long distances in search of suitable food supplies, bringing them farther south and/or downslope than is typical of years with large fruit crops.</item>
-        <item>The Eurasian jay (Garrulus glandarius) is a species of passerine bird in the crow family Corvidae. It has pinkish brown plumage with a black stripe on each side of a whitish throat, a bright blue panel on the upper wing and a black tail. The Eurasian jay is a woodland bird that occurs over a vast region from western Europe and north-west Africa to the Indian subcontinent and further to the eastern seaboard of Asia and down into south-east Asia. Across this vast range, several distinct racial forms have evolved which look different from each other, especially when comparing forms at the extremes of its range.</item>
+        <item>Cica-daun Besar atau Cucak Hijau, dikenal dengan warna hijau terang dan suara merdu.</item>
+        <item>Merpati karang, burung yang sering ditemukan di area urban dan suka berkelompok.</item>
+        <item>Magpie Robin, burung hitam dan putih dengan ekor panjang yang sering dijumpai di Asia.</item>
+        <item>Jalak Bali, burung endemik Bali dengan bulu putih dan pelupuk mata biru.</item>
+        <item>Gelatik Jawa, burung kecil populer sebagai peliharaan dengan bulu indah.</item>
+        <item>Gagak, burung besar dan cerdas dengan bulu hitam, sering dijumpai di seluruh dunia.</item>
     </string-array>
 
     <integer-array name="data_photo">
-        <item>@drawable/kingfisher</item>
-        <item>@drawable/cynanota</item>
+        <item>@drawable/cucaijo</item>
+        <item>@drawable/dara</item>
         <item>@drawable/robin</item>
-        <item>@drawable/gereja</item>
-        <item>@drawable/pinicola</item>
-        <item>@drawable/jay_eurasia</item>
+        <item>@drawable/jalak</item>
+        <item>@drawable/gelatik</item>
+        <item>@drawable/gagak</item>
 
     </integer-array>
 
@@ -77,4 +78,37 @@
     <string name="take">Take Image</string>
     <string name="descScan">Identify bird species effortlessly by either capturing a photo with your camera or selecting an existing image from your gallery</string>
     <string name="Tentang">About</string>
+    <string name="headerTips">Bird Watching Tips</string>
+    <string name="txt1">1. Gear Up for Birding</string>
+    <string name="txt2">Always bring binoculars for a closer look.</string>
+    <string name="txt3">2. Decode Bird Language</string>
+    <string name="txt4">Learn to identify common bird behaviors and sounds.</string>
+    <string name="txt5">3. Use a Field Guide</string>
+    <string name="txt6">Carry a field guide to help identify birds.</string>
+    <string name="txt7">4. Learn Bird Calls</string>
+    <string name="txt8">Familiarize yourself with common bird calls.</string>
+    <string name="txt9">5. Be Patient</string>
+    <string name="txt10">Bird watching requires patience and quiet observation.</string>
+    <string name="txt11">6. Dress Appropriately</string>
+    <string name="txt12">Wear suitable clothing for the environment and weather.</string>
+    <string name="txt13">7. Use Technology</string>
+    <string name="txt14">Utilize birding apps and online resources for assistance.</string>
+    <string name="txt15">8. Observe Flight Patterns</string>
+    <string name="txt16">Pay attention to how birds fly and move.</string>
+    <string name="txt17">9. Keep Notes</string>
+    <string name="txt18">Document your observations and sightings.</string>
+    <string name="txt19">10. Join a Birding Group</string>
+    <string name="txt20">Connect with local bird watchers for tips and outings.</string>
+    <string name="headerUser">How to Use the App</string>
+    <string name="tx1">1. Open the App</string>
+    <string name="tx2">Launch the bird detection app from your home screen or app drawer.</string>
+    <string name="tx3">2. Upload an Image</string>
+    <string name="tx4">Select the upload option to choose a bird image from your gallery.</string>
+    <string name="tx5">3. Use the Camera</string>
+    <string name="tx6">Tap the camera icon to take a photo of a bird directly within the app.</string>
+    <string name="tx7">Wait for the app to analyze the image and identify the bird species.</string>
+    <string name="tx8">5. Review Results</string>
+    <string name="tx9">View the bird species name and additional information provided by the app.</string>
+    <string name="tx10">6. Save the Identification</string>
+    <string name="tx11">Save the identified bird to your personal birding journal within the app.</string>
 </resources>
