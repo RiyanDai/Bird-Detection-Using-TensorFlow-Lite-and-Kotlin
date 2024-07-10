@@ -15,12 +15,18 @@ import com.dicoding.birdie.databinding.FragmentHomeBinding
 import com.dicoding.birdie.view.detail.detail_home.DetailHomeActivity
 
 
-class  HomeFragment : Fragment() {
+
+class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
     private val list = ArrayList<burunge>()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        list.addAll(getListBirds())
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -33,7 +39,6 @@ class  HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        list.addAll(getListBirds())
         showRecyclerGrid()
         ClickListener()
     }
@@ -68,7 +73,6 @@ class  HomeFragment : Fragment() {
         return listBird
     }
 
-
     private fun showRecyclerGrid() {
         binding.recyclerView.layoutManager = GridLayoutManager(requireContext(), 3)
         val birdAdapter = BurungAdapter(list)
@@ -83,7 +87,6 @@ class  HomeFragment : Fragment() {
             }
         })
     }
-
 
     override fun onDestroyView() {
         super.onDestroyView()
