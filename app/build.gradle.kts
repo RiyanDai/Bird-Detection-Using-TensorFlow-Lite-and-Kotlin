@@ -63,15 +63,12 @@ dependencies {
     implementation("org.tensorflow:tensorflow-lite-metadata:0.4.4")
     implementation("org.tensorflow:tensorflow-lite-task-vision:0.4.4")
 
-// UCrop library for image cropping
-    implementation ("com.github.yalantis:ucrop:2.2.8")
-// Coil library for image loading
-    implementation("io.coil-kt:coil:2.6.0")
 // Glide library for image loading and caching
     implementation("com.github.bumptech.glide:glide:4.16.0")
 
 // Lifecycle libraries for ViewModel and LiveData
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+
 // Activity KTX library for Kotlin extensions
     implementation("androidx.activity:activity-ktx:1.9.0")
 
@@ -88,6 +85,7 @@ dependencies {
 
 // Dexter library for handling Android runtime permissions
     implementation ("com.karumi:dexter:6.2.3")
+
 // Additional Coil library for image loading (duplicate, consider removing one)
     implementation("io.coil-kt:coil:1.4.0")
 

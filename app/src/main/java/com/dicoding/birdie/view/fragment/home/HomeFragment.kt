@@ -50,8 +50,6 @@ class  HomeFragment : Fragment() {
         }
     }
 
-
-
     private fun getListBirds(): ArrayList<burunge> {
         val dataName = resources.getStringArray(R.array.data_name)
         val dataDescription = resources.getStringArray(R.array.data_description)

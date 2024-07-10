@@ -1,7 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Birdie" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_color</item>
+        <item name="colorSecondary">@color/primary_color</item>
     </style>
+
+    <style name="Base.Theme.Birdie.Dark" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_color</item>
+        <item name="colorSecondary">@color/primary_color</item>
+    </style>
+
+    <style name="Theme.Birdie" parent="Base.Theme.Birdie" />
+    <style name="Theme.Birdie.Dark" parent="Base.Theme.Birdie.Dark" />
 </resources>

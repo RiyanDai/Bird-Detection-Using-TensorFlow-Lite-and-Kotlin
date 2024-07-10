@@ -193,7 +193,6 @@ class ScanFragment : Fragment(R.layout.fragment_scan) {
         val imageUri = saveImageToCache(bitmap)
         val intent = Intent(requireContext(), ResultActivity::class.java).apply {
             putExtra("label", label)
-            putExtra("confidence", maxConfidence)
             putExtra("imageUri", imageUri.toString())
         }
         startActivity(intent)

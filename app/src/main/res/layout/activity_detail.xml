@@ -56,15 +56,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/tvLabel"
                 tools:layout_editor_absoluteX="16dp" />
 
-            <TextView
-                android:id="@+id/tvScore"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:text=""
-                android:textSize="21sp"
-                app:layout_constraintTop_toBottomOf="@+id/ada"
-                tools:layout_editor_absoluteX="16dp" />
+
 
             <TextView
                 android:id="@+id/tvLabel"

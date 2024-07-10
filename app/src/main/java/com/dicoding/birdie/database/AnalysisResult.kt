@@ -7,6 +7,5 @@ import androidx.room.PrimaryKey
 data class AnalysisResult(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     val label: String,
-    val score: Float,
     val imageUri: String
 )

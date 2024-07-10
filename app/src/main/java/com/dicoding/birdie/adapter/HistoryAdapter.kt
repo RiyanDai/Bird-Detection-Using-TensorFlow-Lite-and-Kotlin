@@ -22,7 +22,7 @@ class HistoryAdapter(
             binding.apply {
                 imageView.load(item.imageUri)
                 tvLabel.text = item.label
-                tvScore.text = "Score: ${(item.score * 100).toInt()}%"
+
 
 
                btndelete.setOnClickListener {
@@ -40,7 +40,7 @@ class HistoryAdapter(
                     val intent = Intent(context, DetailActivity::class.java).apply {
                         putExtra("imageUri", item.imageUri)
                         putExtra("label", item.label)
-                        putExtra("score", item.score)
+
                     }
                     context.startActivity(intent)
                 }

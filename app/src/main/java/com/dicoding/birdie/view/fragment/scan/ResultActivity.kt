@@ -59,7 +59,7 @@ class ResultActivity : AppCompatActivity() {
         binding.resultText.text = getString(R.string.hasil_analisis)
         binding.tvLabel.text = getString(R.string.analysis_type, label)
         binding.ada.text = getString(R.string.moreInfo)
-        binding.tvScore.text = getString(R.string.analysis_score, NumberFormat.getPercentInstance().format(confidence).toString())
+
         binding.imageView.load(imageUri)
 
         // Display the bird description if available
@@ -69,14 +69,14 @@ class ResultActivity : AppCompatActivity() {
 
     private fun saveCurrentAnalysis() {
         val label = intent.getStringExtra("label") ?: return
-        val score = intent.getFloatExtra("confidence", 0.0f)
+
         val imageUri = intent.getStringExtra("imageUri") ?: return
 
-        saveAnalysisResult(label, score, imageUri)
+        saveAnalysisResult(label, imageUri)
     }
 
-    private fun saveAnalysisResult(label: String, score: Float, imageUri: String) {
-        val analysisResult = AnalysisResult(label = label, score = score, imageUri = imageUri)
+    private fun saveAnalysisResult(label: String, imageUri: String) {
+        val analysisResult = AnalysisResult(label = label, imageUri = imageUri)
         val db = AppDatabase.getDatabase(this)
         val dao = db.analysisResultDao()
 

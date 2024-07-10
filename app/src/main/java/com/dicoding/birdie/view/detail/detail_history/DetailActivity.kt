@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import coil.load
 import com.dicoding.birdie.R
 import com.dicoding.birdie.databinding.ActivityDetailBinding
-import java.text.NumberFormat
+
 
 class DetailActivity : AppCompatActivity() {
 
@@ -46,7 +46,7 @@ class DetailActivity : AppCompatActivity() {
         binding.resultText.text = getString(R.string.hasil_analisis)
         binding.tvLabel.text = getString(R.string.analysis_type, label)
         binding.ada.text = getString(R.string.moreInfo)
-        binding.tvScore.text = getString(R.string.analysis_score, NumberFormat.getPercentInstance().format(score).toString())
+       
         binding.imageView.load(imageUri)
     }
 }
